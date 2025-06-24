@@ -1,5 +1,6 @@
 module "vpc" {
-    source = "../terraform-vpc-module"
+    #source = "../terraform-vpc-module"
+    source = "git:: https://github.com/JohnsonQA/terraform-vpc-module.git"    //to get the mpodule directly from git
     project = var.project
     environment = var.environment
     public_subnet_cidrs = var.public_subnet_cidrs
